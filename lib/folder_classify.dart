@@ -34,7 +34,8 @@ const _yearFolderPrefixes = [
 /// Known localized suffixes for year-first languages.
 /// Format: "YYYY<suffix>"
 const _yearFolderSuffixes = [
-  '年のフォト', // JA
+  ' 年の写真', // JA (confirmed: "2026 年の写真")
+  '年のフォト', // JA (alternate)
   '년의 사진', // KO
   '年的照片', // ZH-CN
   '年的相片', // ZH-TW

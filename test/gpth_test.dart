@@ -231,7 +231,7 @@ AQACEQMRAD8AIcgXf//Z""";
       Directory('./Fotos von 2025'), // DE
       Directory('./Photos de 2024'), // FR
       Directory('./Fotos de 2023'), // ES/PT
-      Directory('./2024年のフォト'), // JA
+      Directory('./2024 年の写真'), // JA (confirmed real format)
       Directory('./2024년의 사진'), // KO
       Directory('./2024年的照片'), // ZH-CN
     ];
