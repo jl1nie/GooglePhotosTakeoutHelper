@@ -227,6 +227,13 @@ AQACEQMRAD8AIcgXf//Z""";
       Directory('./Photos from 1969'),
       Directory('./Photos from vacation'),
       Directory('/tmp/very-random-omg'),
+      // Multilingual year folders
+      Directory('./Fotos von 2025'), // DE
+      Directory('./Photos de 2024'), // FR
+      Directory('./Fotos de 2023'), // ES/PT
+      Directory('./2024年のフォト'), // JA
+      Directory('./2024년의 사진'), // KO
+      Directory('./2024年的照片'), // ZH-CN
     ];
     setUpAll(() async {
       for (var d in dirs) {
@@ -239,6 +246,14 @@ AQACEQMRAD8AIcgXf//Z""";
       expect(isYearFolder(dirs[2]), false);
       expect(await isAlbumFolder(dirs[2]), true);
       expect(await isAlbumFolder(dirs[3]), false);
+    });
+    test('is year folder - multilingual', () {
+      expect(isYearFolder(dirs[4]), true); // DE
+      expect(isYearFolder(dirs[5]), true); // FR
+      expect(isYearFolder(dirs[6]), true); // ES/PT
+      expect(isYearFolder(dirs[7]), true); // JA
+      expect(isYearFolder(dirs[8]), true); // KO
+      expect(isYearFolder(dirs[9]), true); // ZH-CN
     });
     tearDownAll(() async {
       for (var d in dirs) {
