@@ -15,7 +15,8 @@ const _yearFolderPrefixes = [
   'Photos de ', // FR (confirmed: issue #461)
   // Inferred from Google's localization patterns:
   'Fotos de ', // ES, PT, CA
-  "Foto's uit ", // NL
+  'Foto_s van ', // NL (confirmed)
+  "Foto's uit ", // NL (alternate)
   'Foto dal ', // IT
   'Foto del ', // IT (alternate)
   'Zdjęcia z ', // PL
